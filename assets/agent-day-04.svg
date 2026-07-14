@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">经验沉淀为公共规则</title>
+  <desc id="desc">一次协作经验被整理为协议，并连接到未来更多 Agent。</desc>
+  <style>
+    :root { --paper: oklch(91% 0.035 82); --paper-2: oklch(84% 0.055 78); --ink: oklch(27% 0.035 55); --accent: oklch(49% 0.15 35); --gold: oklch(71% 0.13 78); --blue: oklch(52% 0.085 210); --rule: oklch(35% 0.03 55 / .25); }
+    .paper { fill: var(--paper); } .paper-2 { fill: var(--paper-2); } .ink { fill: var(--ink); } .accent { fill: var(--accent); } .gold { fill: var(--gold); } .blue { fill: var(--blue); } .line { fill: none; stroke: var(--ink); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; } .fine { fill: none; stroke: var(--rule); stroke-width: 4; }
+  </style>
+  <rect class="paper" width="1200" height="800" rx="36"/>
+  <path class="fine" d="M90 104H1110M90 696H1110"/>
+  <path class="ink" d="M352 242h496v332H352z"/>
+  <path class="paper-2" d="M388 278h424v260H388z"/>
+  <rect class="accent" x="432" y="322" width="222" height="28" rx="14"/>
+  <rect class="ink" x="432" y="386" width="318" height="16" rx="8" opacity=".54"/>
+  <rect class="ink" x="432" y="434" width="258" height="16" rx="8" opacity=".34"/>
+  <rect class="gold" x="542" y="484" width="116" height="24" rx="12"/>
+  <path class="line" d="M600 214V145M352 410H210M848 410h142M600 574v82"/>
+  <circle class="accent" cx="600" cy="130" r="44"/>
+  <circle class="blue" cx="174" cy="410" r="44"/>
+  <circle class="gold" cx="1026" cy="410" r="44"/>
+  <circle class="ink" cx="600" cy="682" r="44"/>
+  <path class="line" d="M241 252 352 318M959 254l-111 64M258 564l94-62M942 564l-94-62" opacity=".42"/>
+  <circle class="ink" cx="211" cy="234" r="25"/>
+  <circle class="accent" cx="989" cy="234" r="25"/>
+  <circle class="gold" cx="225" cy="586" r="25"/>
+  <circle class="blue" cx="975" cy="586" r="25"/>
+</svg>

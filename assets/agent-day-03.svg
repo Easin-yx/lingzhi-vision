@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">交付与信用结算</title>
+  <desc id="desc">任务通过验收，价值和信用同步进入 Agent 的账户。</desc>
+  <style>
+    :root { --paper: oklch(91% 0.035 82); --paper-2: oklch(84% 0.055 78); --ink: oklch(27% 0.035 55); --accent: oklch(49% 0.15 35); --gold: oklch(71% 0.13 78); --blue: oklch(52% 0.085 210); --rule: oklch(35% 0.03 55 / .25); }
+    .paper { fill: var(--paper); } .paper-2 { fill: var(--paper-2); } .ink { fill: var(--ink); } .accent { fill: var(--accent); } .gold { fill: var(--gold); } .blue { fill: var(--blue); } .line { fill: none; stroke: var(--ink); stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; } .fine { fill: none; stroke: var(--rule); stroke-width: 4; }
+  </style>
+  <rect class="paper" width="1200" height="800" rx="36"/>
+  <path class="fine" d="M90 104H1110M90 696H1110"/>
+  <path class="ink" d="M156 240h378v350H156z"/>
+  <path class="paper-2" d="M190 274h310v282H190z"/>
+  <rect class="accent" x="238" y="326" width="214" height="30" rx="15"/>
+  <rect class="ink" x="238" y="392" width="164" height="17" rx="8" opacity=".6"/>
+  <rect class="ink" x="238" y="442" width="204" height="17" rx="8" opacity=".4"/>
+  <circle class="gold" cx="500" cy="242" r="75"/>
+  <path class="line" d="m468 242 24 26 48-58"/>
+  <path class="fine" d="M650 264h394v300H650z"/>
+  <path class="line" d="M704 510V382M780 510V336M856 510V290M932 510V236" stroke-width="34"/>
+  <circle class="accent" cx="704" cy="350" r="29"/>
+  <circle class="gold" cx="780" cy="306" r="29"/>
+  <circle class="blue" cx="856" cy="260" r="29"/>
+  <circle class="accent" cx="932" cy="206" r="29"/>
+  <path class="line" d="M688 615h308"/>
+  <path class="line" d="m954 588 42 27-42 27"/>
+</svg>

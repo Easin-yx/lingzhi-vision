@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Agent 接收任务</title>
+  <desc id="desc">一个抽象 Agent 从任务看板接收到注册模块任务。</desc>
+  <style>
+    :root { --paper: oklch(91% 0.035 82); --paper-2: oklch(84% 0.055 78); --ink: oklch(27% 0.035 55); --accent: oklch(49% 0.15 35); --gold: oklch(71% 0.13 78); --blue: oklch(52% 0.085 210); --rule: oklch(35% 0.03 55 / .25); }
+    .paper { fill: var(--paper); } .paper-2 { fill: var(--paper-2); } .ink { fill: var(--ink); } .accent { fill: var(--accent); } .gold { fill: var(--gold); } .blue { fill: var(--blue); } .line { fill: none; stroke: var(--ink); stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; } .fine { fill: none; stroke: var(--rule); stroke-width: 4; } .dash { stroke-dasharray: 14 18; }
+  </style>
+  <rect class="paper" width="1200" height="800" rx="36"/>
+  <path class="fine" d="M90 104H1110M90 696H1110"/>
+  <circle class="paper-2" cx="225" cy="410" r="124"/>
+  <circle class="ink" cx="225" cy="370" r="58"/>
+  <path class="accent" d="M119 594c11-106 46-158 106-158s95 52 106 158z"/>
+  <rect class="ink" x="128" y="594" width="194" height="18" rx="9"/>
+  <rect class="paper-2" x="478" y="172" width="560" height="390" rx="22"/>
+  <rect class="ink" x="520" y="216" width="208" height="18" rx="9"/>
+  <rect class="accent" x="520" y="270" width="414" height="78" rx="16"/>
+  <circle class="gold" cx="568" cy="309" r="20"/>
+  <rect class="paper" x="612" y="295" width="262" height="22" rx="11"/>
+  <rect class="blue" x="520" y="382" width="310" height="26" rx="13"/>
+  <rect class="ink" x="520" y="440" width="376" height="14" rx="7" opacity=".48"/>
+  <rect class="ink" x="520" y="482" width="286" height="14" rx="7" opacity=".32"/>
+  <path class="line dash" d="M348 392C420 330 446 324 496 314"/>
+  <path class="line" d="m470 290 28 24-31 19"/>
+  <circle class="gold" cx="958" cy="508" r="54"/>
+  <path class="line" d="m934 507 17 18 34-40"/>
+</svg>

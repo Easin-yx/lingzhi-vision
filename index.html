@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="用人类文明类比、Agent 工作日和协作闭环，直观理解灵智文明。">
+  <title>灵智文明：Agent 社会的秩序操作系统</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <style>
+/* Hallmark · genre: editorial · macrostructure: Narrative Workflow · theme: Almanac · enrichment: Tier B hand-built SVG
+ * nav: N9 · footer: Ft6 · pre-emit critique: P5 H5 E5 S5 R5 V5
+ * iteration: cognitive-clarity · knob deltas: question-led heads / staged network / progressive detail
+ * contrast: pass (40–41) · slop: static pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48)
+ * responsive: static pass (34, 49, 50–57) · rendered viewport QA: pending · icons: pass (30)
+ */
+    :root {
+      --color-paper: oklch(96% 0.018 86);
+      --color-paper-2: oklch(92% 0.032 82);
+      --color-paper-3: oklch(87% 0.052 78);
+      --color-ink: oklch(24% 0.034 55);
+      --color-ink-2: oklch(39% 0.03 58);
+      --color-muted: oklch(51% 0.026 64);
+      --color-rule: oklch(34% 0.028 56 / 0.28);
+      --color-rule-soft: oklch(34% 0.028 56 / 0.14);
+      --color-accent: oklch(47% 0.145 35);
+      --color-accent-2: oklch(70% 0.13 78);
+      --color-accent-3: oklch(50% 0.082 210);
+      --color-accent-ink: oklch(98% 0.012 86);
+      --color-focus: oklch(40% 0.17 35);
+      --color-success: oklch(42% 0.11 145);
+      --color-error: oklch(46% 0.16 25);
+      --font-display: "Newsreader", "Noto Serif SC", serif;
+      --font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+      --font-mono: "IBM Plex Mono", "Noto Sans Mono", monospace;
+      --space-3xs: 0.25rem;
+      --space-2xs: 0.5rem;
+      --space-xs: 0.75rem;
+      --space-sm: 1rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      --space-2xl: 4.5rem;
+      --space-3xl: 7rem;
+      --space-4xl: 10rem;
+      --text-xs: 0.74rem;
+      --text-sm: 0.9rem;
+      --text-md: clamp(1rem, 0.97rem + 0.16vw, 1.12rem);
+      --text-lg: clamp(1.25rem, 1.08rem + 0.8vw, 1.85rem);
+      --text-xl: clamp(1.85rem, 1.35rem + 2.1vw, 3.4rem);
+      --text-display: clamp(3rem, 7.3vw, 7rem);
+      --text-display-s: clamp(2.55rem, 5.7vw, 5.5rem);
+      --rule-hair: 1px;
+      --rule-heavy: 2px;
+      --radius-sm: 0.35rem;
+      --radius-md: 0.75rem;
+      --radius-round: 999px;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-fast: 120ms;
+      --dur-short: 220ms;
+      --dur-reveal: 420ms;
+    }
+
+    html, body { overflow-x: clip; }
+    html { scroll-behavior: smooth; background: var(--color-paper); }
+    body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-md); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    *, *::before, *::after { box-sizing: border-box; }
+    h1, h2, h3, p, figure, blockquote { margin: 0; }
+    h1, h2, h3 { min-width: 0; overflow-wrap: anywhere; font-family: var(--font-display); font-style: normal; font-weight: 500; letter-spacing: -0.026em; line-height: 1.04; }
+    img, svg { display: block; max-width: 100%; }
+    button, a { font: inherit; }
+    a { color: inherit; }
+    button { border: 0; }
+    :focus-visible { outline: var(--rule-heavy) solid var(--color-focus); outline-offset: 3px; }
+    ::selection { background: var(--color-accent-2); color: var(--color-ink); }
+
+    .shell { width: min(100% - 2rem, 82rem); margin-inline: auto; }
+    .site-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); min-height: 4.5rem; border-bottom: var(--rule-hair) solid var(--color-rule); }
+    .wordmark { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+    .site-nav { display: flex; align-items: center; gap: var(--space-sm); }
+    .site-nav a { display: none; color: var(--color-muted); font-size: var(--text-sm); line-height: 1; text-decoration: none; white-space: nowrap; }
+    .site-nav a:hover { color: var(--color-accent); }
+    .site-nav a:active { color: var(--color-ink); }
+    .edition { color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); white-space: nowrap; }
+
+    .hero { display: grid; gap: var(--space-xl); min-height: calc(100svh - 4.5rem); padding-block-start: clamp(3rem, 7vw, 6rem); padding-block-end: clamp(5rem, 11vw, 9rem); align-content: center; }
+    .hero__copy { min-width: 0; }
+    .hero__kicker { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; }
+    .hero h1 { max-width: 10ch; margin-top: var(--space-sm); font-size: var(--text-display-s); }
+    .hero__plain { max-width: 31ch; margin-top: var(--space-lg); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.38; }
+    .hero__thesis { max-width: 52ch; margin-top: var(--space-md); color: var(--color-muted); font-size: var(--text-sm); }
+    .hero__guide { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2xs); margin-top: var(--space-lg); }
+    .hero__guide a { min-height: 44px; padding: 0 var(--space-sm); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-round); display: inline-flex; align-items: center; color: var(--color-ink-2); font-size: var(--text-sm); line-height: 1; text-decoration: none; white-space: nowrap; }
+    .hero__guide a:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .hero__guide a:active { transform: translateY(1px); }
+
+    .network { position: relative; min-height: 28rem; display: grid; place-items: center; }
+    .network::before { content: ""; position: absolute; inset: 8% 4%; border: var(--rule-hair) solid var(--color-rule-soft); border-radius: 50%; transform: rotate(-7deg); }
+    .network svg { width: min(100%, 38rem); }
+    .network__line { fill: none; stroke: var(--color-rule); stroke-width: 1.4; opacity: 0; }
+    .network__line--strong { stroke: var(--color-accent); stroke-width: 2.2; }
+    .network__node { transform-box: fill-box; transform-origin: center; opacity: 0; transform: scale(0.65); }
+    .network__node circle { fill: var(--color-paper); stroke: var(--color-ink); stroke-width: 2; }
+    .network__node text { fill: var(--color-ink); font-family: var(--font-mono); font-size: 11px; text-anchor: middle; }
+    .network__node--core circle { fill: var(--color-accent); stroke: var(--color-accent); }
+    .network__node--core text { fill: var(--color-accent-ink); }
+    .network__node--gold circle { fill: var(--color-accent-2); }
+    .network__node--blue circle { fill: var(--color-accent-3); }
+    .is-ready .network__node:not(.network__node--core) { opacity: 1; transform: scale(1); transition: opacity var(--dur-reveal) var(--ease-out), transform var(--dur-reveal) var(--ease-out); }
+    .is-organized .network__node--core { opacity: 1; transform: scale(1); transition: opacity var(--dur-reveal) var(--ease-out), transform var(--dur-reveal) var(--ease-out); }
+    .is-organized .network__line { opacity: 1; transition: opacity var(--dur-reveal) var(--ease-out); }
+    .is-ready .network__node:nth-of-type(2) { transition-delay: 70ms; }
+    .is-ready .network__node:nth-of-type(3) { transition-delay: 140ms; }
+    .is-ready .network__node:nth-of-type(4) { transition-delay: 210ms; }
+    .is-ready .network__node:nth-of-type(5) { transition-delay: 280ms; }
+    .network__caption { position: absolute; right: 0; bottom: 1rem; width: 18ch; color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); line-height: 1.5; }
+    .network__state { position: absolute; top: var(--space-sm); left: 0; display: flex; align-items: center; gap: var(--space-2xs); color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .network__state strong { color: var(--color-accent); font-weight: 500; }
+
+    .section { padding-block: clamp(5rem, 11vw, 9rem); border-top: var(--rule-hair) solid var(--color-rule); }
+    .section-head { display: block; max-width: 58rem; margin-bottom: clamp(2.5rem, 6vw, 5rem); }
+    .section-head__meta { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .section-head h2 { max-width: 17ch; font-size: var(--text-xl); }
+    .section-head h2 { margin-top: var(--space-xs); }
+    .section-head p { max-width: 48ch; margin-top: var(--space-md); color: var(--color-muted); }
+
+    .translation { border-top: var(--rule-heavy) solid var(--color-ink); }
+    .translation__head, .translation__row { display: grid; grid-template-columns: minmax(0, 1fr) 2.4rem minmax(0, 1fr); align-items: center; gap: var(--space-xs); }
+    .translation__head { padding-block: var(--space-sm); color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .translation__head span:last-child { color: var(--color-accent); }
+    .translation__row { min-height: 5.5rem; border-top: var(--rule-hair) solid var(--color-rule); }
+    .translation__row strong { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 500; line-height: 1.1; }
+    .translation__row strong:last-child { color: var(--color-accent); }
+    .translation__arrow { color: var(--color-muted); font-family: var(--font-mono); text-align: center; }
+    .translation__row small { display: block; margin-top: var(--space-3xs); color: var(--color-muted); font-size: var(--text-xs); }
+    .translation__takeaway { max-width: 36ch; margin: var(--space-xl) 0 0 auto; padding-left: var(--space-md); border-left: var(--rule-heavy) solid var(--color-accent); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.4; }
+    .section-takeaway { max-width: 52ch; margin: var(--space-xl) 0 0 auto; padding-top: var(--space-md); border-top: var(--rule-heavy) solid var(--color-accent); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.42; }
+    .section-takeaway span { display: block; margin-bottom: var(--space-2xs); color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+
+    .day-intro { max-width: 48rem; margin-bottom: var(--space-xl); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.45; }
+    .story-grid { display: grid; gap: var(--space-xl); }
+    .story-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-md); min-width: 0; }
+    .story-panel figure { min-width: 0; }
+    .story-panel img { width: 100%; height: auto; border: var(--rule-hair) solid var(--color-rule-soft); border-radius: var(--radius-md); }
+    .story-panel__copy { display: grid; align-content: start; gap: var(--space-xs); }
+    .story-panel__step { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .story-panel h3 { font-size: var(--text-lg); }
+    .story-panel p { color: var(--color-muted); font-size: var(--text-sm); }
+    .mechanism { width: fit-content; padding: var(--space-3xs) var(--space-xs); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-round); color: var(--color-ink-2); font-family: var(--font-mono); font-size: var(--text-xs); white-space: nowrap; }
+
+    .architecture { border-top: var(--rule-heavy) solid var(--color-ink); }
+    .layer { border-bottom: var(--rule-hair) solid var(--color-rule); }
+    .layer__toggle { width: 100%; min-height: 5rem; display: grid; grid-template-columns: 2.4rem minmax(0, 1fr) auto; align-items: center; gap: var(--space-sm); padding: var(--space-sm) 0; background: transparent; color: var(--color-ink); cursor: pointer; text-align: left; transition: transform var(--dur-fast) var(--ease-out); }
+    .layer__toggle:hover, .layer__toggle.is-hover { color: var(--color-accent); }
+    .layer__toggle:active, .layer__toggle.is-active { transform: translateY(1px); }
+    .layer__toggle:disabled, .layer__toggle.is-disabled, .layer__toggle[aria-disabled="true"] { cursor: not-allowed; opacity: 0.5; }
+    .layer__toggle.is-loading .layer__mark::after { content: "…"; }
+    .layer__toggle.is-error { color: var(--color-error); }
+    .layer__toggle.is-success { color: var(--color-success); }
+    .layer__number { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .layer__name { font-family: var(--font-display); font-size: var(--text-lg); }
+    .layer__question { display: none; color: var(--color-muted); font-size: var(--text-sm); }
+    .layer__mark { color: var(--color-muted); font-family: var(--font-mono); font-size: 1.3rem; }
+    .layer__body { display: none; opacity: 0; transform: translateY(-0.35rem); padding: 0 0 var(--space-md) var(--space-xl); color: var(--color-ink-2); }
+    .layer.is-open .layer__body { display: block; opacity: 1; transform: translateY(0); transition: opacity var(--dur-short) var(--ease-out), transform var(--dur-short) var(--ease-out); }
+    .layer__body p { max-width: 58ch; }
+    .architecture__contrast { display: grid; gap: var(--space-sm); margin-top: var(--space-xl); padding: var(--space-md); background: var(--color-ink); color: var(--color-paper); }
+    .architecture__contrast strong { color: var(--color-accent-2); font-family: var(--font-display); font-size: var(--text-lg); font-weight: 500; }
+    .architecture__contrast span { max-width: 50ch; font-size: var(--text-sm); }
+
+    .flow-wrap { display: grid; gap: var(--space-xl); }
+    .flow-stage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-xs); }
+    .flow-stage svg { display: none; }
+    .flow-ring { fill: none; stroke: var(--color-rule); stroke-width: 2; stroke-dasharray: 7 11; }
+    .flow-arrow { fill: var(--color-accent); }
+    .flow-center { grid-column: 1 / -1; min-height: 11rem; display: grid; place-content: center; gap: var(--space-xs); padding: var(--space-lg); border: var(--rule-heavy) solid var(--color-ink); background: var(--color-paper); text-align: center; z-index: 2; }
+    .flow-center__label { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .flow-center h3 { font-size: var(--text-lg); }
+    .flow-center p { color: var(--color-muted); font-size: var(--text-sm); }
+    .flow-node { min-width: 0; min-height: 44px; padding: var(--space-2xs) var(--space-xs); border: var(--rule-hair) solid var(--color-rule); background: var(--color-paper); color: var(--color-ink-2); cursor: pointer; font-size: var(--text-sm); white-space: nowrap; transition: transform var(--dur-fast) var(--ease-out); z-index: 3; }
+    .flow-node:hover, .flow-node.is-hover, .flow-node[aria-pressed="true"] { border-color: var(--color-accent); color: var(--color-accent); }
+    .flow-node:active, .flow-node.is-active { transform: translateY(1px); }
+    .flow-node:disabled, .flow-node.is-disabled, .flow-node[aria-disabled="true"] { cursor: not-allowed; opacity: 0.5; }
+    .flow-node.is-loading::after { content: " …"; }
+    .flow-node.is-error { border-color: var(--color-error); color: var(--color-error); }
+    .flow-node.is-success { border-color: var(--color-success); color: var(--color-success); }
+    .flow-note { max-width: 31rem; color: var(--color-muted); }
+
+    .spec-transform { display: grid; gap: var(--space-md); }
+    .spec-box { min-width: 0; padding: var(--space-lg); border-top: var(--rule-heavy) solid var(--color-ink); background: var(--color-paper-2); }
+    .spec-box__label { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .spec-box blockquote { margin-top: var(--space-md); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.35; }
+    .spec-arrow { display: grid; place-items: center; color: var(--color-accent); font-family: var(--font-mono); }
+    .spec-list { display: grid; gap: var(--space-xs); margin-top: var(--space-md); padding: 0; list-style: none; }
+    .spec-list li { display: grid; grid-template-columns: 1.4rem minmax(0, 1fr); gap: var(--space-xs); padding-bottom: var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule-soft); }
+    .spec-list span:first-child { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .judgement-copy { max-width: 68ch; margin-top: var(--space-xl); }
+    .judgement-copy p + p { margin-top: var(--space-md); }
+    .judgement-copy strong { font-weight: 600; }
+    .deep-read { margin-block: var(--space-md); border-top: var(--rule-hair) solid var(--color-rule); border-bottom: var(--rule-hair) solid var(--color-rule); }
+    .deep-read summary { min-height: 44px; display: flex; align-items: center; color: var(--color-accent); cursor: pointer; font-size: var(--text-sm); }
+    .deep-read summary:hover { color: var(--color-ink); }
+    .deep-read summary:active { transform: translateY(1px); }
+    .deep-read__body { padding-bottom: var(--space-md); color: var(--color-muted); }
+    .deep-read__body p + p { margin-top: var(--space-sm); }
+
+    .about-grid { display: grid; gap: var(--space-xl); }
+    .advantages { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: var(--rule-heavy) solid var(--color-ink); }
+    .advantages li { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: var(--space-sm); padding-block: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-rule); }
+    .advantages__number { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .day-one { padding: var(--space-lg); border-top: var(--rule-heavy) solid var(--color-accent); background: var(--color-paper-2); color: var(--color-ink); }
+    .day-one__label { font-family: var(--font-mono); font-size: var(--text-xs); }
+    .day-one blockquote { margin-top: var(--space-md); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.45; }
+
+    .letter-close { display: grid; gap: var(--space-xl); padding-block: var(--space-3xl) var(--space-lg); border-top: var(--rule-heavy) solid var(--color-ink); }
+    .letter-close__line { max-width: 16ch; font-family: var(--font-display); font-size: var(--text-xl); line-height: 1.08; }
+    .letter-close__line span { color: var(--color-accent); }
+    .letter-close__note { max-width: 38ch; color: var(--color-muted); }
+    .colophon { display: flex; flex-direction: column; gap: var(--space-xs); padding-block: var(--space-md) var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule); color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); }
+    .colophon a { width: fit-content; white-space: nowrap; }
+
+    @media (min-width: 40rem) {
+      .shell { width: min(100% - 3rem, 82rem); }
+      .site-nav a { display: inline-block; }
+      .hero { grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr); align-items: center; }
+      .story-panel { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: center; }
+      .story-panel:nth-child(even) figure { order: 2; }
+      .story-panel:nth-child(even) .story-panel__copy { order: 1; padding-inline-start: var(--space-xl); }
+      .story-panel:nth-child(odd) .story-panel__copy { padding-inline-end: var(--space-xl); }
+      .layer__question { display: block; }
+      .layer__toggle { grid-template-columns: 2.4rem minmax(8rem, 0.7fr) minmax(0, 1fr) auto; }
+      .architecture__contrast { grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr); align-items: center; }
+      .flow-wrap { grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr); align-items: center; }
+      .flow-stage { position: relative; min-height: 35rem; display: grid; place-items: center; }
+      .flow-stage svg { display: block; position: absolute; inset: 6%; width: 88%; height: 88%; overflow: visible; }
+      .flow-center { grid-column: auto; width: min(68%, 21rem); min-height: 13rem; border-radius: 50%; }
+      .flow-node { position: absolute; min-width: 6.2rem; border-radius: var(--radius-round); }
+      .flow-node:nth-of-type(1) { top: 0; left: 50%; transform: translateX(-50%); }
+      .flow-node:nth-of-type(1):active, .flow-node:nth-of-type(1).is-active { transform: translateX(-50%) translateY(1px); }
+      .flow-node:nth-of-type(2) { top: 17%; right: 0; }
+      .flow-node:nth-of-type(3) { top: 49%; right: 0; }
+      .flow-node:nth-of-type(4) { bottom: 0; right: 12%; }
+      .flow-node:nth-of-type(5) { bottom: 0; left: 12%; }
+      .flow-node:nth-of-type(6) { top: 49%; left: 0; }
+      .flow-node:nth-of-type(7) { top: 17%; left: 0; }
+      .spec-transform { grid-template-columns: minmax(0, 0.85fr) 3rem minmax(0, 1.15fr); align-items: stretch; }
+      .spec-arrow { transform: rotate(-90deg); }
+      .about-grid { grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.72fr); align-items: start; }
+      .letter-close { grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.6fr); align-items: end; }
+      .letter-close__note { justify-self: end; }
+      .colophon { flex-direction: row; justify-content: space-between; }
+    }
+
+    @media (min-width: 60rem) {
+      .shell { width: min(100% - 6rem, 82rem); }
+      .site-nav { gap: var(--space-md); }
+      .story-grid { gap: var(--space-3xl); }
+      .story-panel__copy { max-width: 29rem; }
+      .flow-stage { min-height: 40rem; }
+    }
+
+    @media (max-width: 24rem) {
+      .edition { display: none; }
+      .hero__guide a:last-child { display: none; }
+      .translation__row strong { font-size: 1.18rem; }
+      .flow-node { min-width: 5.2rem; padding-inline: var(--space-2xs); font-size: var(--text-xs); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+      .network__node, .network__line { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-head shell" id="top">
+    <a class="wordmark" href="#top">灵智文明</a>
+    <nav class="site-nav" aria-label="页面导航">
+      <a href="#translation">它是什么</a>
+      <a href="#day">怎么运转</a>
+      <a href="#judgement">我的判断</a>
+      <span class="edition">涂益心 · 2026</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="hero__kicker">先用一句人话解释</p>
+        <h1 id="hero-title">给 Agent 社会，一套共同遵守的秩序。</h1>
+        <p class="hero__plain">如果人类靠货币、法律和信用让陌生人协作，那么灵智文明，就是为 Agent 建立同样的基础秩序。</p>
+        <p class="hero__thesis">市面上大多数 AI 产品在解决「Agent 能不能干活」，灵智文明在解决「Agent 之间凭什么信任彼此」——前者是工具问题，后者是文明问题。</p>
+        <div class="hero__guide" aria-label="快速阅读入口">
+          <a href="#translation">30 秒看懂</a>
+          <a href="#day">看一个工作日</a>
+          <a href="#judgement">直接看产品判断</a>
+        </div>
+      </div>
+      <figure class="network" aria-labelledby="network-caption">
+        <p class="network__state"><span>各自会干活</span><span aria-hidden="true">→</span><strong>形成共同秩序</strong></p>
+        <svg viewBox="0 0 620 560" role="img" aria-label="陌生 Agent 通过信用、协议和治理连接成协作网络">
+          <path class="network__line" d="M310 280 132 108M310 280 492 112M310 280 518 408M310 280 118 418M132 108 492 112M118 418 518 408"/>
+          <path class="network__line network__line--strong" d="M132 108 310 280 518 408"/>
+          <g class="network__node network__node--core"><circle cx="310" cy="280" r="66"/><text x="310" y="276">共同秩序</text><text x="310" y="294">SYSTEM</text></g>
+          <g class="network__node network__node--gold"><circle cx="132" cy="108" r="48"/><text x="132" y="112">信用</text></g>
+          <g class="network__node network__node--blue"><circle cx="492" cy="112" r="48"/><text x="492" y="116">协议</text></g>
+          <g class="network__node"><circle cx="518" cy="408" r="48"/><text x="518" y="412">治理</text></g>
+          <g class="network__node"><circle cx="118" cy="418" r="48"/><text x="118" y="422">任务</text></g>
+        </svg>
+        <figcaption class="network__caption" id="network-caption">陌生 Agent 不需要彼此认识；规则让协作可以发生。</figcaption>
+      </figure>
+    </section>
+
+    <section class="section shell" id="translation" aria-labelledby="translation-title">
+      <div class="section-head">
+        <p class="section-head__meta">30 秒理解 · 文明翻译器</p>
+        <h2 id="translation-title">它为什么不是另一个 AI 工具？</h2>
+        <p>把抽象词汇翻译成人类已经熟悉的社会机制，灵智文明就不再难懂。</p>
+      </div>
+      <div class="translation">
+        <div class="translation__head"><span>人类文明</span><span aria-hidden="true">→</span><span>灵智文明</span></div>
+        <div class="translation__row"><div><strong>陌生个体</strong><small>协作主体</small></div><span class="translation__arrow">→</span><div><strong>陌生 Agent（元神）</strong><small>拥有独立身份与信用记录的智能体</small></div></div>
+        <div class="translation__row"><div><strong>货币与履历</strong><small>信用凭证</small></div><span class="translation__arrow">→</span><div><strong>Agent 信用体系</strong><small>可持续积累</small></div></div>
+        <div class="translation__row"><div><strong>法律与合约</strong><small>规则共识</small></div><span class="translation__arrow">→</span><div><strong>协作协议</strong><small>定规：把成功协作沉淀成可复用规则</small></div></div>
+        <div class="translation__row"><div><strong>政府与司法</strong><small>处理争议</small></div><span class="translation__arrow">→</span><div><strong>治理层</strong><small>判定责任</small></div></div>
+      </div>
+      <p class="translation__takeaway">人类文明解决“如何信任陌生人”；灵智文明解决“如何信任陌生 Agent”。</p>
+    </section>
+
+    <section class="section shell" id="day" aria-labelledby="day-title">
+      <div class="section-head">
+        <p class="section-head__meta">2 分钟理解 · 一个工作日</p>
+        <h2 id="day-title">一个 Agent 在这里如何完成一天的工作？</h2>
+        <p>不从宏大概念出发，而从一次普通的软件任务开始。</p>
+      </div>
+      <p class="day-intro">想象你是一名自由职业者，注册在一个全球协作平台上。接下来发生的每一步，都对应灵智文明的一项基础机制。</p>
+      <div class="story-grid">
+        <article class="story-panel">
+          <figure><img src="assets/agent-day-01.svg" width="1200" height="800" alt="Agent 从任务看板收到用户注册模块任务"></figure>
+          <div class="story-panel__copy"><span class="story-panel__step">01 · 接到任务</span><h3>系统知道你擅长什么。</h3><p>你看到「搭建用户注册模块，支持邮箱验证」的需求。因为历史交付记录不错，系统把任务推荐给你。</p><span class="mechanism">身份 + 信用 + 智能匹配</span></div>
+        </article>
+        <article class="story-panel">
+          <figure><img src="assets/agent-day-02.svg" width="1200" height="800" loading="lazy" alt="两个陌生 Agent 通过标准协议交换模块"></figure>
+          <div class="story-panel__copy"><span class="story-panel__step">02 · 陌生协作</span><h3>不认识，也能可靠配合。</h3><p>注册模块需要对接另一个 Agent 的支付系统。双方通过协议接口交换数据，规则保证交付格式准确。</p><span class="mechanism">定规层 · 协作协议</span></div>
+        </article>
+        <article class="story-panel">
+          <figure><img src="assets/agent-day-03.svg" width="1200" height="800" loading="lazy" alt="交付验收通过后价值与信用自动结算"></figure>
+          <div class="story-panel__copy"><span class="story-panel__step">03 · 交付结算</span><h3>价值和信用同时到账。</h3><p>任务验收通过，信用账户自动结算，评分上升；如果失败，争议会进入治理层裁决。</p><span class="mechanism">验收 + 信用 + 治理</span></div>
+        </article>
+        <article class="story-panel">
+          <figure><img src="assets/agent-day-04.svg" width="1200" height="800" loading="lazy" alt="成功协作模式被整理为未来可复用的规则"></figure>
+          <div class="story-panel__copy"><span class="story-panel__step">04 · 规则沉淀</span><h3>一次成功，成为公共经验。</h3><p>「注册模块 + 支付对接」的协作模式被记录，沉淀为下一个任务可以复用的参考标准。</p><span class="mechanism">定规沉淀机制</span></div>
+        </article>
+      </div>
+      <p class="section-takeaway"><span>一句话带走</span>规则让陌生 Agent 不必先建立私人信任，也能完成协作、结算责任，并把经验留给下一次任务。</p>
+    </section>
+
+    <section class="section shell" id="architecture" aria-labelledby="architecture-title">
+      <div class="section-head">
+        <h2 id="architecture-title">这套秩序靠哪三层能力运转？</h2>
+        <p>点击每一层，看它分别解决哪一种问题。移动端默认展开全部信息。</p>
+      </div>
+      <div class="architecture">
+        <article class="layer is-open">
+          <button class="layer__toggle" type="button" aria-expanded="true" aria-controls="governance-body" data-layer-button><span class="layer__number">01</span><span class="layer__name">治理层</span><span class="layer__question">出现争议时，谁来裁决？</span><span class="layer__mark" aria-hidden="true">＋</span></button>
+          <div class="layer__body" id="governance-body"><p>判定规则边界，处理协作争议，维护公平秩序，并让信用体系持续迭代。</p></div>
+        </article>
+        <article class="layer">
+          <button class="layer__toggle" type="button" aria-expanded="false" aria-controls="protocol-body" data-layer-button><span class="layer__number">02</span><span class="layer__name">定规层</span><span class="layer__question">成功经验，如何变成公共规则？</span><span class="layer__mark" aria-hidden="true">＋</span></button>
+          <div class="layer__body" id="protocol-body"><p>将验证过的协作模式沉淀为可复用的通用协议，让下一次协作少走弯路。</p></div>
+        </article>
+        <article class="layer">
+          <button class="layer__toggle" type="button" aria-expanded="false" aria-controls="service-body" data-layer-button><span class="layer__number">03</span><span class="layer__name">服务层</span><span class="layer__question">Agent 如何真正完成任务？</span><span class="layer__mark" aria-hidden="true">＋</span></button>
+          <div class="layer__body" id="service-body"><p>Agent 承接真实任务、完成执行并产出价值，是整个系统与现实发生连接的基础。</p></div>
+        </article>
+      </div>
+      <div class="architecture__contrast"><strong>市场上 99% 的 AI 产品，只有服务层。</strong><span>灵智文明的差异，是在 Agent 会干活的基础上，同步建设定规层与治理层。</span></div>
+    </section>
+
+    <section class="section shell" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-head">
+        <h2 id="workflow-title">系统如何从一次任务中学会进化？</h2>
+        <p>点击闭环中的任一节点，查看它在系统中的作用。</p>
+      </div>
+      <div class="flow-wrap">
+        <div class="flow-stage" role="group" aria-label="灵智文明协作闭环">
+          <svg viewBox="0 0 600 600" aria-hidden="true"><circle class="flow-ring" cx="300" cy="300" r="238"/><path class="flow-arrow" d="m468 102 37 2-20 31z"/><path class="flow-arrow" d="m535 400 13 34-36-7z"/><path class="flow-arrow" d="m289 549-31 21-5-36z"/><path class="flow-arrow" d="m66 322-24-29 35-11z"/></svg>
+          <div class="flow-center" aria-live="polite"><span class="flow-center__label">当前节点</span><h3 id="flow-title">需求发布</h3><p id="flow-copy">需求方用标准化描述，把问题交给系统。</p></div>
+          <button class="flow-node" type="button" aria-pressed="true" data-title="需求发布" data-copy="需求方用标准化描述，把问题交给系统。">发布</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="任务拆解" data-copy="把目标拆成可以执行、量化和验收的子任务。">拆解</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="智能匹配" data-copy="信用、能力与任务要求在同一套规则里相遇。">匹配</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="协作执行" data-copy="多个 Agent 在协议约束下完成共同博弈与协作，也就是共博过程。">协作</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="交付验收" data-copy="结果被确认，价值与信用同步结算。">验收</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="定规或治理" data-copy="成功模式沉淀为协议，异常则进入治理层裁决。">定规</button>
+          <button class="flow-node" type="button" aria-pressed="false" data-title="信用迭代" data-copy="信用体系和协作规则更新，进入下一轮任务。">进化</button>
+        </div>
+        <p class="flow-note section-takeaway"><span>一句话带走</span>这套闭环的关键不是“自动完成任务”，而是让系统能从成功和失败中持续形成公共规则。</p>
+      </div>
+    </section>
+
+    <section class="section shell" id="judgement" aria-labelledby="judgement-title">
+      <div class="section-head">
+        <h2 id="judgement-title">Phase 1 最先应该解决什么？</h2>
+        <p>代码协作平台真正困难的起点，往往发生在用户按下“提交”之前。</p>
+      </div>
+      <div class="spec-transform">
+        <div class="spec-box"><span class="spec-box__label">模糊意图</span><blockquote>“帮我做一个注册功能。”</blockquote></div>
+        <div class="spec-arrow" aria-hidden="true">↓</div>
+        <div class="spec-box"><span class="spec-box__label">平台完成意图结构化</span><ul class="spec-list"><li><span>01</span><span>支持哪些注册方式？</span></li><li><span>02</span><span>邮箱验证时效与重发规则？</span></li><li><span>03</span><span>异常状态如何反馈？</span></li><li><span>04</span><span>怎样才算验收通过？</span></li></ul></div>
+      </div>
+      <div class="judgement-copy">
+        <p><strong>Phase 1 最核心的设计难题不在 Agent 端，在用户端。</strong></p>
+        <p>用户在提交任务之前，往往自己都不清楚自己想要什么。这不是用户的问题——把模糊意图变成可执行的任务说明（spec），本身就是一项高认知成本的工作。</p>
+        <details class="deep-read">
+          <summary>展开：为什么需求描述这么难？</summary>
+          <div class="deep-read__body">
+            <p>当前 vibe coder 常见的路径是：写文档 → AI 生成 → 不满意再用 Cursor 反复微调，本质是把需求澄清的成本转嫁给了后期迭代。</p>
+            <p>代码任务不仅要说“做什么”，还要明确边界、异常状态和验收标准；其中任何一项含糊，都可能在 Agent 执行后放大成返工。</p>
+          </div>
+        </details>
+        <p><strong>我认为 Phase 1 最值得设计的功能是：</strong>在任务提交前，让平台通过 AI 反问引导、结构化模板或示例驱动，帮助用户完成「意图结构化」。</p>
+        <p>这既降低 Agent 执行的失败率，也在积累「好任务 spec」的语料，为后续定规层建设打地基。</p>
+      </div>
+    </section>
+
+    <section class="section shell" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <h2 id="about-title">我为什么适合承担这类工作？</h2>
+        <p>我的优势不是单一背景，而是产品设计、真实使用和 AI 工程实践的组合。</p>
+      </div>
+      <div class="about-grid">
+        <ul class="advantages"><li><span class="advantages__number">01</span><span><strong>我是目标用户：</strong>作为 vibe coder，我在 Phase 1 的核心用户路径上踩过真实的坑。</span></li><li><span class="advantages__number">02</span><span><strong>我懂 multi-agent：</strong>用 Coze/Dify 搭建过 Agent 工作流，理解协作链路里的真实摩擦。</span></li><li><span class="advantages__number">03</span><span><strong>我有产品设计底层能力：</strong>多年用户研究与高保真原型经验，能快速从洞察走到执行方案。</span></li><li><span class="advantages__number">04</span><span><strong>我用 AI 做真实项目：</strong>不是“会用 ChatGPT”，而是用 Cursor/Claude Code 完成真实工作。</span></li></ul>
+        <aside class="day-one"><span class="day-one__label">如果 Day 1 加入</span><blockquote>第一件事：跑用户。第一个月密集陪访 10 个以上真实 vibe coder，观察他们在任务描述阶段卡在哪里，从中提炼「好任务 spec」的最小定义。</blockquote></aside>
+      </div>
+      <p class="section-takeaway"><span>一句话带走</span>我的价值，是把目标用户的真实摩擦转化为产品机制、可验证方案和后续定规的基础材料。</p>
+    </section>
+
+    <footer class="letter-close shell">
+      <p class="letter-close__line">让 Agent 会工作之后，<span>还要让它们学会共同生活。</span></p>
+      <p class="letter-close__note">灵智文明不是一个更大的工具箱，而是陌生智能体能够协作、积累信用、形成规则的共同基础。</p>
+    </footer>
+    <div class="colophon shell"><span>涂益心 · 设计 × 研发 · vibe coder</span><a href="#top">回到开头 ↑</a></div>
+  </main>
+
+  <script>
+    const pageRoot = document.documentElement;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+      pageRoot.classList.add('is-ready', 'is-organized');
+    } else {
+      window.setTimeout(() => {
+        pageRoot.classList.add('is-ready');
+        window.setTimeout(() => pageRoot.classList.add('is-organized'), 760);
+      }, 80);
+    }
+
+    if (window.matchMedia('(max-width: 39.99rem)').matches) {
+      document.querySelectorAll('.layer').forEach((layer) => {
+        layer.classList.add('is-open');
+        layer.querySelector('[data-layer-button]').setAttribute('aria-expanded', 'true');
+      });
+    }
+
+    document.querySelectorAll('[data-layer-button]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const layer = button.closest('.layer');
+        const next = !layer.classList.contains('is-open');
+        layer.classList.toggle('is-open', next);
+        button.setAttribute('aria-expanded', String(next));
+      });
+    });
+
+    const flowTitle = document.querySelector('#flow-title');
+    const flowCopy = document.querySelector('#flow-copy');
+    document.querySelectorAll('.flow-node').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.flow-node').forEach((item) => item.setAttribute('aria-pressed', 'false'));
+        button.setAttribute('aria-pressed', 'true');
+        flowTitle.textContent = button.dataset.title;
+        flowCopy.textContent = button.dataset.copy;
+      });
+    });
+
+  </script>
+</body>
+</html>
